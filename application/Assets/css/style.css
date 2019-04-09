@@ -1,0 +1,15 @@
+
+.container a {
+    color: #e64809;
+    text-decoration: none;
+}
+.container a:hover {
+    color: #e64809;
+    text-decoration: underline;
+}
+a .nav-link{
+    color: black;
+}
+.navbar-brand img {
+    width: 120px;
+}
