@@ -3,13 +3,16 @@
     color: #e64809;
     text-decoration: none;
 }
-.container a:hover {
+.link {
     color: #e64809;
-    text-decoration: underline;
+    text-decoration: none;
 }
-a .nav-link{
-    color: black;
+.link:hover{
+    text-decoration: underline;
 }
 .navbar-brand img {
     width: 120px;
+}
+.avatar {
+  border-radius: 50%;
 }
