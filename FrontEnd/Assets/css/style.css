@@ -13,6 +13,11 @@
 .navbar-brand img {
     width: 120px;
 }
-.avatar {
+#user-logo-kecil {
   border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.nav-item .dropdown .dropdown-right{
+    position: relative;
 }
