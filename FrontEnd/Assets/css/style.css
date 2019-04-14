@@ -1,8 +1,4 @@
 
-.container a {
-    color: #e64809;
-    text-decoration: none;
-}
 .link {
     color: #e64809;
     text-decoration: none;
@@ -13,6 +9,42 @@
 .navbar-brand img {
     width: 120px;
 }
+#background{
+    background-color: #04A2EC;
+    padding-top: 108px;
+}
+#avatar-image{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+#profilename{
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+#alias{
+    margin-top: 6px;
+    margin-bottom: 26px;
+}
+#work p{
+    padding-bottom : 0;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+#work, #profilename{
+    display: -webkit-inline-flex;
+}
+#avatar-user p {
+    font-size : 15px;
+}
+#avatar-user h3, p{
+    color: white;
+}
+#tab {
+    margin-top: 36px;
+}
 #user-logo-kecil {
   border-radius: 50%;
   width: 32px;
@@ -20,4 +52,26 @@
 }
 .nav-item .dropdown .dropdown-right{
     position: relative;
+}
+#navs .nav-link {
+    color: black;
+}
+#navs .nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+.onsite{
+    color: black;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px;
+    border-color: #e64809;
+}
+#tab {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: outset;
 }
