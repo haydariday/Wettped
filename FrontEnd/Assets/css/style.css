@@ -39,7 +39,7 @@
 #avatar-user p {
     font-size : 15px;
 }
-#avatar-user h3, p{
+#avatar-user h3, #avatar-user p{
     color: white;
 }
 #tab {
