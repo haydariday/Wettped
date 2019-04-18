@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Wettped</title>
@@ -10,125 +9,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	
-	<div class="padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 text-center">
-					<h2>Hi, we're Wettped</h2>
-					<h3>Semua orang suka membaca</h3>
-					<h4>Membaca adalah hobby yag unik. Karena banyak orang yang menganggap membaca adalah hal yang membosankan</h4>
-					<button class="btn btn-warning">Start Reading</button> 
-					<button class="btn btn-warning">Start Writing</button>
-				</div>
-				<div class="col-sm-6">
-					<img src="img/ww.jpg">
-				</div>
+	<nav id="WPNavbar" role="navigation" class="container">
+		<div id="header-item-logo">
+			<a href="/" title="Wattpad Home" aria-label="Home">
+				<img src="img/logoW.png" alt="Wattpad" class="wp-logo hidden-xs" width="123">
+			</a>
+		</div>
+		<div id="discover-dropdown" class="dropdown">
+			<a href="#">Browse<span class="caret"></span></a>
+		</div>
+		<a href="/writers">Writer Opportunities</a>
+		<div id="community-dropdown" class="dropdown">
+			<a href="#">Community<span class="caret"></span></a>
+		</div>
+		<form id="header-item-search" role="form" name="search" action="/search/" method="GET" autocomplete="off">
+			<button type="submit"><span class="fa fa-search fa-wp-neutral-1 " aria-hidden="true" style="font-size: 16px;"></span>
+			</button>
+			<input id="search-query" name="q" type="text" role="search" spellcheck="false" placeholder="Search" aria-label="Search">
+			<input type="hidden" name="ref" value="1">
+		</form>
+		<div id="authentication">
+			<div>
+				<button class="btn btn-sm">Log in</button>
+			</div>
+			<div id="language-dropdown" class="dropdown">
+				<a href="#">English<span class="caret"></span></a>
 			</div>
 		</div>
-	</div>
-
-	<div class="padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<img src="img/wall1.jpg" class="img-responsive" width="450">
-				</div>
-				<div class="col-sm-6 ">
-					<h3>Story dapat diambil dari kisah Nyata</h3>
-					<p>Kisah yang diceritakan diwettped dapat ditulis dari fakta maupun suatu imajinasi seorang penulis. Cerita yang ditulis dapat dikembangkan dan membuat banyak pembaca penasaran dengan kelanjutan cerita tersebut</p>
-					<div class="listcontainer">
-						<h5>Lihat storymu..</h5>
-						<ul>
-							<li>
-								<img src="story1.png">"Dipublikasi"
-							</li>
-							<li>
-								<img src="story2.png">"Video"
-							</li>
-							<li>
-								<img src="story3.png">"TV"
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-
-	<div class="padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<img src="logo1.png">
-					<img src="logo2.png">
-					<img src="logo3.png">
-					<img src="logo4.png">
-				</div>
-				<div class="col-sm-3">
-					<img src="logo1.png">
-					<img src="logo2.png">
-					<img src="logo3.png">
-					<img src="logo4.png">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="text text-center">
-				<h3>Bagaimana Wettped bekerja</h3>
-				<p>Kerja Wettped dengan mendapatkan cerita baru maupun cerita update-an dari sipenulis dan diupload dan selanjutnya</p>
-			</div>
-			<div class="col-sm-4">
-				<div class="step">
-					<h2 class="number">1</h2>
-					<div>
-						<h3 class="title">Membuat</h3>
-						<p class="description">Bagikan cerita unik yang kau miliki ke wettped.Dan banyak orang yang akan membaca dan mengomentari cerita yang kamu buat.</p>
-						<div class="count">50+</div>
-						<div class="title">Writing Resources</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="step">
-					<h2 class="number">2</h2>
-					<div>
-						<h3 class="title">Membangun</h3>
-						<p class="description">Membangun konsep cerita yang dapat menjadi suatu daya tarik bagi siapapun yang membaca.</p>
-						<div class="count">70 Millions</div>
-						<div class="title">Reader</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="step">
-					<h2 class="number">3</h2>
-					<div>
-						<h3 class="title">Memperkuat</h3>
-						<p class="description">Memperkuat ciri khas yang dimiliki oleh masing-masing cerita.</p>
-						<div class="count">1000+</div>
-						<div class="title">Story Deals</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<h3>Koneksi</h3>
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-google"></a>
-				<a href="#" class="fa fa-youtube"></a>
-			</div>
-			
-			
-			<div class="col-sm-4">
-				<img src="img/ww.jpg" class="icon">
-			</div>
-		</div>
-	</div>
-
+	</nav>
 </body>
-
 </html>

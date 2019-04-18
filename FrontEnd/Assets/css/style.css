@@ -75,3 +75,22 @@
     border-right: none;
     border-bottom-style: outset;
 }
+
+.container {
+    width: 100%;
+}
+#WPNavbar {
+    display: flex;
+    height: 52px;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
