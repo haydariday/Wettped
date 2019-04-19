@@ -2,54 +2,62 @@
 <head>
 	<title>Wettped</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript" src=""></script>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" type="text/css" href="Assets/css/style.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<nav id="WPNavbar" role="navigation" class="container">
-		<div id="header-item-logo">
-			<a href="/" title="Wattpad Home" aria-label="Home">
-				<img src="img/logoW.png" alt="Wattpad" class="wp-logo hidden-xs" width="123">
-			</a>
-		</div>
-		<div id="discover-dropdown" class="dropdown">
-			<a href="#">Browse<span class="caret"></span></a>
-		</div>
-		<a href="/writers">Writer Opportunities</a>
-		<div id="community-dropdown" class="dropdown">
-			<a href="#">Community<span class="caret"></span></a>
-		</div>
-		<form id="header-item-search" role="form" name="search" action="/search/" method="GET" autocomplete="off">
-			<button type="submit"><span class="fa fa-search fa-wp-neutral-1 " aria-hidden="true" style="font-size: 16px;"></span>
-			</button>
-			<input id="search-query" name="q" type="text" role="search" spellcheck="false" placeholder="Search" aria-label="Search">
-			<input type="hidden" name="ref" value="1">
-		</form>
-		<div id="authentication">
+	<div id="HeroBox">
+		<div class="containerhome contenthome">
 			<div>
-				<button class="btn btn-sm">Log in</button>
-			</div>
-			<div id="language-dropdown" class="dropdown">
-				<a href="#">English<span class="caret"></span></a>
-			</div>
-		</div>
-	</nav>
-	<div id="Hero">
-		<div class="container content">
-			<div>
-				<h2>Hi, we're Wattpad.</h2>
-				<h3>The world's most-loved social storytelling platform</h3>
-				<h4>Wattpad connects a global community of 70 million readers and writers through the power of story.</h4>
+				<h2 class="HWW">Hi, we're Wattpad.</h2>
+				<h3 class="TWW">The world's most-loved social storytelling platform</h3>
+				<h4 class="WC">Wattpad connects a global community of 70 million readers and writers through the power of story.</h4>
 				<div class="buttons">
 					<button class="btn btn-md btn-orange">Start Reading</button>
 					<button class="btn btn-md btn-orange">Start Writing</button>
 				</div>
 			</div>
-			<div class="imageContainer">
-				<img src="img/W1.jpg" alt="hero-devices">
+			<div class="imageContainer1">
+				<img src="img/W1.jpg" alt="hero-devices"></div>
+			</div>
+		</div>
+	<div id="Intro">
+		<div class="containerhome contenthome">
+			<div class="imageContainer1">
+				<a href="https://after.wattpad.com" target="_blank" rel="noopener noreferrer">
+					<img src="img/promoposters.png" alt="after movie - promotional poster for the official after movie launch">
+				</a>
+			</div>
+			<div class="textContainer">
+				<h3>Your original story could be the next blockbuster</h3>
+				<p>Wattpad Studios discovers untapped, unsigned, and talented writers on Wattpad and connects them to global multi-media entertainment companies. 
+					<a href="/writers/" target="_blank">Find out more</a>
+				</p>
+				<div class="listContainer">
+					<h4>See Your Story...</h4>
+					<ul>
+						<li><img src="/img//landing/book-icon.svg" alt="book">Get published</li>
+						<li><img src="/img//landing/reel-icon.svg" alt="reel">Get produced to movie or film</li>
+						<li><img src="/img//landing/tv-icon.svg" alt="tv">Get adapted to a TV series</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="Logos">
+			<div class="container">
+				<div id="publishers" class="logo-row">
+					<img src="/img/landing/simonschuster.svg" alt="sschuster">
+					<img src="/img/landing/harper-collins.svg" alt="hcollins">
+					<img src="/img/landing/macmillan.svg" alt="macmillan">
+					<img src="/img/landing/wp_books.svg" alt="wp_books">
+				</div>
+				<div id="studios" class="logo-row">
+					<img src="/img/landing/nbc.svg" alt="nbc">
+					<img src="/img/landing/paramount.svg" alt="paramount">
+					<img src="/img/landing/eone.svg" alt="eone">
+					<img src="/img/landing/turner.svg" alt="turner">
+				</div>
 			</div>
 		</div>
 	</div>

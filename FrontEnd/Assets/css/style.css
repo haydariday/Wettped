@@ -172,3 +172,68 @@ form {
     transition: all .1s ease-in-out;
     position: relative;
 }
+.contenthome {
+    display: flex;
+}
+.containerhome {
+    width: 100%;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.HWW{
+    font-size: 60px;
+    line-height: normal;
+    text-align: left;
+    color: #ff6122;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    display: block;
+}
+.TWW{
+    font-size: 25px;
+    line-height: normal;
+    font-weight: 400;
+    color: #222;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    display: block;
+}
+.WC{
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 12px;
+    color: inherit;
+
+}
+.btn-orange {
+    color: #fff;
+    background-color: #ff6122;
+    border-color: transparent;
+}
+.btn-md {
+    padding: 5px 25px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 6px;
+    margin: 3px 5px;
+}
+.contenthome .imageContainer1 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    align-self: flex-end;
+}
+#HeroBox {
+    background-color: #fff;
+    background-image: url("../img/BackHome.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 70px 0 40px;
+}
