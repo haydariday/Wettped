@@ -1,0 +1,239 @@
+
+.link {
+    color: #e64809;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.navbar-brand img {
+    width: 120px;
+}
+#background{
+    background-color: #04A2EC;
+    padding-top: 108px;
+}
+#avatar-image{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+#profilename{
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+#alias{
+    margin-top: 6px;
+    margin-bottom: 26px;
+}
+#work p{
+    padding-bottom : 0;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+#work, #profilename{
+    display: -webkit-inline-flex;
+}
+#avatar-user p {
+    font-size : 15px;
+}
+#avatar-user h3, #avatar-user p{
+    color: white;
+}
+#tab {
+    margin-top: 36px;
+}
+#user-logo-kecil {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.nav-item .dropdown .dropdown-right{
+    position: relative;
+}
+#navs .nav-link {
+    color: black;
+}
+#navs .nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+.onsite{
+    color: black;
+    font-weight: bold;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px;
+    border-color: #e64809;
+}
+#tab {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: outset;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+#WPNavbar {
+    display: flex;
+    height: 52px;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    display: block;
+}
+
+#header-item-logo {
+    margin-right: 60px;
+}
+
+#WPNavbar a {
+    margin-right: 15px;
+    font-weight: 600;
+    padding-right: 25px;
+    color: #222;
+}
+
+a {
+    color: #e64809;
+    text-decoration: none;
+    background: 0 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+#header-item-search {
+    flex-basis: 30%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.fa-wp-neutral-1 {
+    color: #222;
+}
+
+.fa {
+    font-family: wp-web-icons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+#authentication {
+    position: absolute;
+    right: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+#authentication button {
+    color: #222;
+    font-size: 16px;
+}
+.btn-group-sm > .btn, .btn-sm {
+    padding: 5px 15px;
+    line-height: 18px;
+    border-radius: 6px;
+    margin: 3px 5px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+    transition: all .1s ease-in-out;
+    position: relative;
+}
+.contenthome {
+    display: flex;
+}
+.containerhome {
+    width: 100%;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.HWW{
+    font-size: 60px;
+    line-height: normal;
+    text-align: left;
+    color: #ff6122;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    display: block;
+}
+.TWW{
+    font-size: 25px;
+    line-height: normal;
+    font-weight: 400;
+    color: #222;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    display: block;
+}
+.WC{
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 12px;
+    color: inherit;
+
+}
+.btn-orange {
+    color: #fff;
+    background-color: #ff6122;
+    border-color: transparent;
+}
+.btn-md {
+    padding: 5px 25px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 6px;
+    margin: 3px 5px;
+}
+.contenthome .imageContainer1 {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    align-self: flex-end;
+}
+#HeroBox {
+    background-color: #fff;
+    background-image: url("../img/BackHome.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 70px 0 40px;
+}
