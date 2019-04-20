@@ -306,6 +306,7 @@ img {
     padding: 60px 0 0;
     background-color: #fafafa;
     color: #222;
+    text-align: center;
     overflow: hidden;
     font-size: 20px;
     color: #222;
@@ -330,7 +331,7 @@ h2 {
     font-size: 30px;
     color: #222;
 }
-#HowWattpadWorks .content>p {
+#HowWattpadWorks .content > p {
     text-align: center;
     margin-bottom: 55px;
 }
@@ -338,10 +339,6 @@ h2 {
 p {
     margin: 0 0 12px;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 #HowWattpadWorks .content #steps {
     display: flex;
@@ -394,15 +391,13 @@ h3{
     font-family: inherit;
     color: inherit;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     margin-top: 24px;
     margin-bottom: 12px;
 }
 #HowWattpadWorks .content #steps .stepContainer .step p {
     color: #6f6f6f;
+    margin: 0 0 12px;
+    display: flex;
 }
 #HowWattpadWorks .content #steps .stepContainer .dots {
     display: flex;
@@ -432,19 +427,64 @@ h3{
     background-size: auto 100%;
     background-position: center;
     padding: 16px 0;
-    color: #fff;
+    color: orange;
 }
-#HowWattpadWorks .content #steps .stepContainer .statBubble>div .count {
+#HowWattpadWorks .content #steps .stepContainer .statBubble > div .count {
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
 }
 #HowWattpadWorks .content #steps .stepContainer .statBubble {
     text-align: center;
-    color: #fff;
+    color: orange;
 }
-#HowWattpadWorks .content #steps .stepContainer .statBubble>div .title {
+#HowWattpadWorks .content #steps .stepContainer .statBubble > div .title {
     font-size: 27px;
     line-height: 32px;
     font-weight: 600;
+}
+#GetDiscovered {
+    background-color: #fafafa;
+    display: block;
+}
+#Links .links {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+#Links .links .link {
+    width: 100%;
+}
+
+#landing #Links .links .link {
+    position: relative;
+    flex-basis: 322px;
+    cursor: pointer;
+    display: block;
+}
+#Links .links .link .image {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+#Links .links .link .image img {
+    width: 75%;
+    display: block;
+    vertical-align: middle;
+    border: 0;
+    align-items: center;
+}
+#TakeWP {
+    background-size: cover;
+    background-color: #FF7F50;
+    padding-top: 62px;
+    margin-bottom: 60px;
+}
+#TakeWP .content img {
+    width: 100%;
+    z-index: 100;
+    vertical-align: middle;
+    border: 0;
 }
