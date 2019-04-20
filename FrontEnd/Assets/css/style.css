@@ -212,6 +212,19 @@ form {
     color: inherit;
 
 }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-container {
+    position: relative;
+    text-align: center;
+  }
+  .fixed-top-2{
+      margin-top: 56px;
+  }
 .btn-orange {
     color: #fff;
     background-color: #ff6122;
