@@ -3,7 +3,7 @@
 <head>
     <!-- this is bootstrap4 -->
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="https://i.imgur.com/i4gDwUP.png" type="image/png">
     <title>Wettped</title>
 </head>
@@ -44,11 +44,11 @@
                         <ul class="navbar-nav navbar-right">
                                 <!-- login -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Login</a>
+                                    <a href="index.php/home/login" class="nav-link">Login</a>
                                 </li>
                                 <!-- Register -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Register</a>
+                                    <a href="index.php/home/register" class="nav-link">Register</a>
                                 </li>
                                 <!-- Write -->
                                 <li class="nav-item dropdown">

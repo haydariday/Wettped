@@ -1,4 +1,13 @@
-<div class="WPM">
+<html>
+<head>
+	<title>Wettped</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>Assets/css/style.css">
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="WPM">
 		<div class="modal-content">
 			<span class="fa fa-remove fa-wp-neutral-1 close-btn" aria-hidden="true" style="font-size: 22px;"></span>
 			<div id="authentication-panel" class="auth-form">
@@ -42,3 +51,5 @@
 			</div>
 		</div>
 	</div>
+</body>
+</html>
