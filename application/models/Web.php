@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
         $this->load->database();
     }
 
+    //STORY
     //GET STORY LIST
     function get_story_lists()
     {
@@ -42,7 +43,9 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
         $this->db->update('stories', $data); 
     }
     
-    /////////////////////GET USER LIST//////////////////
+
+    //USER
+    //GET USER LIST
     function get_user_lists()
     {
         $this->datatables->select('id,username,password,email,name,gender,image,create_at');
@@ -74,5 +77,40 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     {   
         $this->db->where('id', $id);
         $this->db->update('users', $data); 
+    }
+
+    //COMMENT
+    //GET COMMENT LIST
+    function get_comment_lists()
+    {
+        $this->datatables->select('id', 'story_id', 'user_id', 'body', 'created_at');
+        $this->datatables->from('comments'); 
+        return $this->datatables->generate();
+    }
+    // GET COMMENT BY ID
+    function get_comment($id)
+    {
+        $this->db->from('comments');
+        $this->db->where('id',$id);
+        $query = $this->db->get(); 
+        return $query->row();
+    }
+    // CREATE COMMENT BY ID
+    function create_comment($data)
+    {
+        $this->db->insert('comments', $data);
+        return $this->db->insert_id();
+    }
+    //DELETE COMMENT BY ID
+    function delete_comment($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('comments');
+    }
+    //UPDATE COMMENT BY ID
+    function update_comment($id,$data)
+    {   
+        $this->db->where('id', $id);
+        $this->db->update('comments', $data); 
     }
 }
