@@ -12,8 +12,8 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     //GET STORY LIST
     function get_story_lists()
     {
-        $this->datatables->select('id,writer_id,title,genre,image,create_at');
-        $this->datatables->from('stories'); 
+        $this->db->select('id,writer_id,title,genre,image,create_at');
+        $this->db->from('stories'); 
         return $this->datatables->generate();
     }
     // GET STORY BY ID
@@ -48,9 +48,9 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     //GET USER LIST
     function get_user_lists()
     {
-        $this->datatables->select('id,username,password,email,name,gender,image,create_at');
-        $this->datatables->from('users'); 
-        return $this->datatables->generate();
+        $this->db->select('id,username,password,email,name,gender,image,create_at');
+        $this->db->from('users'); 
+        return $this->db->generate();
     }
     // GET USER BY ID
     function get_user($id)
@@ -83,9 +83,9 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     //GET COMMENT LIST
     function get_comment_lists()
     {
-        $this->datatables->select('id', 'story_id', 'user_id', 'body', 'created_at');
-        $this->datatables->from('comments'); 
-        return $this->datatables->generate();
+        $this->db->select('id', 'story_id', 'user_id', 'body', 'created_at');
+        $this->db->from('comments'); 
+        return $this->db->generate();
     }
     // GET COMMENT BY ID
     function get_comment($id)
