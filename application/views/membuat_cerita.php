@@ -2,15 +2,15 @@
 <html>
 <head>
 	 <!-- this is bootstrap4 -->
-     <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-     <link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/style.css">
+     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/bootstrap.min.css">
      <link rel="shortcut icon" href="https://i.imgur.com/i4gDwUP.png" type="image/png">
      <title>Wettped</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
         <div class="navbar-nav navbar-left mr-5">
-            <a href="#"><img class="pr-1" src="Assets/img/back.svg" width="24px"></a>
+            <a href="#"><img class="pr-1" src="<?= base_url('img/back.svg'); ?>" width="24px"></a>
             <div>
                 <p class="mb-0 small">Add story info</p>
                 <span class="h4">Story Tittle</span>
@@ -30,7 +30,7 @@
                 <div class="img-container">
                         <img src="https://via.placeholder.com/195x304" width="195px" height="304px">
                         <div class="centered">
-                            <img src="Assets/img/frame-landscape.svg" width="60px" height="60px">
+                            <img src="<?= base_url('img/frame-landscape.svg'); ?>" width="60px" height="60px">
                         </div>
                         <input type="file" name="image">
                 </div>

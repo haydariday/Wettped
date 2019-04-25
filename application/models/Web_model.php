@@ -8,109 +8,16 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
         $this->load->database();
     }
 
-    //STORY
-    //GET STORY LIST
-    function get_story_lists()
-    {
-        $this->db->select('id,writer_id,title,genre,image,create_at');
-        $this->db->from('stories'); 
-        return $this->datatables->generate();
-    }
-    // GET STORY BY ID
-    function get_stories($id)
-    {
-        $this->db->from('stories');
-        $this->db->where('id',$id);
-        $query = $this->db->get(); 
-        return $query->row();
-    }
-    // CREATE STORY BY ID
-    function create_story($data)
-    {
-        $this->db->insert('stories', $data);
-        return $this->db->insert_id();
-    }
-    //DELETE STORY BY ID
-    function delete_story($id)
-    {
-        $this->db->where('id', $id);
-        $this->db->delete('stories');
-    }
-    //UPDATE STORY BY ID
-    function update_story($id,$data)
-    {   
-        $this->db->where('id', $id);
-        $this->db->update('stories', $data); 
+    public function simpan($post){
+		//pastikan nama index post yang dipanggil sama seperti di form input
+		$username = $this->db->escape($post['username']);
+		$email = $this->db->escape($post['email']);
+		$password = $this->db->escape($post['password']);
+
+		$sql = $this->db->query("INSERT INTO register VALUES (NULL, $username, $email, $password, 1)");
+		if($sql)
+			return true;
+		return false;
     }
     
-
-    //USER
-    //GET USER LIST
-    function get_user_lists()
-    {
-        $this->db->select('id,username,password,email,name,gender,image,create_at');
-        $this->db->from('users'); 
-        return $this->db->generate();
-    }
-    // GET USER BY ID
-    function get_user($id)
-    {
-        $this->db->from('users');
-        $this->db->where('id',$id);
-        $query = $this->db->get(); 
-        return $query->row();
-    }
-    // CREATE USER BY ID
-    function create_user($data)
-    {
-        $this->db->insert('users', $data);
-        return $this->db->insert_id();
-    }
-    //DELETE USER BY ID
-    function delete_user($id)
-    {
-        $this->db->where('id', $id);
-        $this->db->delete('users');
-    }
-    //UPDATE USER BY ID
-    function update_user($id,$data)
-    {   
-        $this->db->where('id', $id);
-        $this->db->update('users', $data); 
-    }
-
-    //COMMENT
-    //GET COMMENT LIST
-    function get_comment_lists()
-    {
-        $this->db->select('id', 'story_id', 'user_id', 'body', 'created_at');
-        $this->db->from('comments'); 
-        return $this->db->generate();
-    }
-    // GET COMMENT BY ID
-    function get_comment($id)
-    {
-        $this->db->from('comments');
-        $this->db->where('id',$id);
-        $query = $this->db->get(); 
-        return $query->row();
-    }
-    // CREATE COMMENT BY ID
-    function create_comment($data)
-    {
-        $this->db->insert('comments', $data);
-        return $this->db->insert_id();
-    }
-    //DELETE COMMENT BY ID
-    function delete_comment($id)
-    {
-        $this->db->where('id', $id);
-        $this->db->delete('comments');
-    }
-    //UPDATE COMMENT BY ID
-    function update_comment($id,$data)
-    {   
-        $this->db->where('id', $id);
-        $this->db->update('comments', $data); 
-    }
 }

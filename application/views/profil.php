@@ -2,8 +2,8 @@
 <html>
 <head>
     <!-- this is bootstrap4 -->
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/bootstrap.min.css">
     <link rel="shortcut icon" href="https://i.imgur.com/i4gDwUP.png" type="image/png">
     <title>Wettped</title>
 </head>
@@ -13,7 +13,7 @@
                 <!-- avatar -->
                 <div id="avatar-user" class="text-center">
                     <div id="wrapper" class="mr-auto">
-                        <img id="avatar-image" src="Assets/img/User LOGO.png">
+                        <img id="avatar-image" src="<?= base_url('img/User LOGO.png'); ?>">
                     </div>
                     <h3 id="profilename" style="text-shadow:0.1em 0.1em 0.2em gray">USERNAME</h3>
                     <div class="d-flex">
@@ -76,7 +76,7 @@
                                 <li class="list-group-item">
                                     <p class="mb-1 text-muted"><small>FOLLOWING</small></p>
                                     <a href="">
-                                        <img src="Assets/img/User LOGO.png" class="rounded-circle" width="32px">
+                                        <img src="<?= base_url('img/User LOGO.png'); ?>" class="rounded-circle" width="32px">
                                     </a>
                                 </li>
                             </ul>

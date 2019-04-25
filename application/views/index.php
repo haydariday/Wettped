@@ -3,7 +3,7 @@
 	<title>Wettped</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	<link rel="stylesheet" href="<?= base_url(); ?>Assets/css/style.css">
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -14,12 +14,12 @@
 				<h3 class="TWW">The world's most-loved social storytelling platform</h3>
 				<h4 class="WC">Wettped connects a global community of 70 million readers and writers through the power of story.</h4>
 				<div class="buttons">
-					<button class="btn btn-md btn-orange">Start Reading</button>
-					<button class="btn btn-md btn-orange">Start Writing</button>
+					<button onclick="window.location.href='home/register'" class="btn btn-md btn-orange">Start Reading</button>
+					<button onclick="window.location.href='home/halaman_cerita'" class="btn btn-md btn-orange">Start Writing</button>
 				</div>
 			</div>
 			<div class="imageContainer1">
-				<img src="img/W1.jpg" alt="hero-devices">
+				<img src="<?= base_url('img/W1.jpg'); ?>" alt="hero-devices">
 			</div>
 		</div>
 	</div>
@@ -27,7 +27,7 @@
 		<div class="containerhome contenthome">
 			<div class="imageContainer1">
 				<a href="https://after.wattpad.com" target="_blank" rel="noopener noreferrer">
-					<img src="img/promoposters.png" alt="after movie - promotional poster for the official after movie launch">
+					<img src="<?= base_url('img/promoposters.png'); ?>" alt="after movie - promotional poster for the official after movie launch">
 				</a>
 			</div>
 			<div class="textContainer">
@@ -38,9 +38,9 @@
 				<div class="listContainer">
 					<h4>See Your Story...</h4>
 					<ul>
-						<li><img src="img/book.svg" alt="book">Get published</li>
-						<li><img src="img/video.svg" alt="reel">Get produced to movie or film</li>
-						<li><img src="img/tv.svg" alt="tv">Get adapted to a TV series</li>
+						<li><img src="<?= base_url('img/book.svg'); ?>" alt="book">Get published</li>
+						<li><img src="<?= base_url('img/video.svg'); ?>" alt="reel">Get produced to movie or film</li>
+						<li><img src="<?= base_url('img/tv.svg'); ?>" alt="tv">Get adapted to a TV series</li>
 					</ul>
 				</div>
 			</div>
@@ -48,16 +48,16 @@
 		<div id="Logos">
 			<div class="containerhome">
 				<div id="publishers" class="logo-row">
-					<img src="img/logo1.svg" alt="sschuster">
-					<img src="img/logo2.svg" alt="hcollins">
-					<img src="img/logo3.svg" alt="macmillan">
-					<img src="img/logo4.svg" alt="wp_books">
+					<img src="<?= base_url('img/logo1.svg'); ?>" alt="sschuster">
+					<img src="<?= base_url('img/logo2.svg'); ?>" alt="hcollins">
+					<img src="<?= base_url('img/logo3.svg'); ?>" alt="macmillan">
+					<img src="<?= base_url('img/logo4.svg'); ?>" alt="wp_books">
 				</div>
 				<div id="studios" class="logo-row">
-					<img src="img/logo5.svg" alt="nbc">
-					<img src="img/logo6.svg" alt="paramount">
-					<img src="img/logo8.svg" alt="eone">
-					<img src="img/logo7.svg" alt="turner">
+					<img src="<?= base_url('img/logo5.svg'); ?>" alt="nbc">
+					<img src="<?= base_url('img/logo6.svg'); ?>" alt="paramount">
+					<img src="<?= base_url('img/logo7.svg'); ?>" alt="eone">
+					<img src="<?= base_url('img/logo8.svg'); ?>" alt="turner">
 				</div>
 			</div>
 		</div>
@@ -144,7 +144,7 @@
 				<div class="links">
 					<div class="link">
 						<div class="image">
-							<img src="img/dis1.png" alt="Writing Contests">
+							<img src="<?= base_url('img/dis1.png'); ?>" alt="Writing Contests">
 						</div>
 						<div class="info">
 							<h4>Writing Contests</h4>
@@ -153,7 +153,7 @@
 					</div>
 					<div class="link">
 						<div class="image">
-							<img src="img/dis2.png" alt="The Wattys">
+							<img src="<?= base_url('img/dis2.png'); ?>" alt="The Wattys">
 						</div>
 						<div class="info">
 							<h4>The Wattys</h4>
@@ -162,7 +162,7 @@
 					</div>
 					<div class="link">
 						<div class="image">
-							<img src="img/dis3.png" alt="Wattpad Picks">
+							<img src="<?= base_url('img/dis3.png'); ?>" alt="Wattpad Picks">
 						</div>
 						<div class="info">
 							<h4>Wettped Picks</h4>
@@ -178,7 +178,7 @@
 				<div class="links">
 					<div class="link">
 						<div class="image">
-							<img src="img/dis4.png" alt="WattCon">
+							<img src="<?= base_url('img/dis4.png'); ?>" alt="WattCon">
 						</div>
 						<div class="info">
 							<h4>WattCon</h4>
@@ -187,7 +187,7 @@
 					</div>
 					<div class="link">
 						<div class="image">
-							<img src="img/dis5.png" alt="Community">
+							<img src="<?= base_url('img/dis5.png'); ?>" alt="Community">
 						</div>
 						<div class="info">
 							<h4>Community</h4>
@@ -196,7 +196,7 @@
 					</div>
 					<div class="link">
 						<div class="image">
-							<img src="img/dis6.png" alt="Get Social">
+							<img src="<?= base_url('img/dis6.png'); ?>" alt="Get Social">
 						</div>
 						<div class="info">
 							<h4>Get Social</h4>
@@ -211,7 +211,7 @@
 		<div class="container content">
 			<h3>Take Wettped With You</h3>
 			<p>Read and write anywhere, even offline.</p>
-			<img src="img/GFooter.png" alt="devices" class="devices">
+			<img src="<?= base_url('img/GFooter.png'); ?>" alt="devices" class="devices">
 		</div>
 	</div>
 </body>

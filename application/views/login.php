@@ -3,7 +3,7 @@
 	<title>Wettped</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('Assets/css/style.css'); ?>">
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 					<div class="signin-buttons clearfix">
 						<div class="col-xs-6 left">
 							<button class="btn btn-lg btn-left-align btn-facebook btn-block">
-								<img src="img/Facebook.png" alt="Facebook Login" class="fa fa-facebook-official fa-wp-neutral-5 " width="24">
+								<img src="<?= base_url('img/Facebook.png'); ?>" alt="Facebook Login" class="fa fa-facebook-official fa-wp-neutral-5 " width="24">
 								<span>
 									<span class="auth-btn-long">Continue with Facebook</span>
 									<span class="auth-btn-short">Continue</span>
@@ -25,7 +25,7 @@
 						</div>
 						<div class="col-xs-6 right">
 							<button class="btn btn-lg btn-left-align btn-google btn-block">
-								<img src="img/Google.jpg" alt="Google Login" class="google-login-logo" width="24">
+								<img src="<?= base_url('img/Google.jpg'); ?>" alt="Google Login" class="google-login-logo" width="24">
 								<span>
 									<span class="auth-btn-long">Continue with Google</span>
 									<span class="auth-btn-short">Continue</span>
@@ -45,7 +45,7 @@
 								<input type="password" id="signup-password" class="form-control enable input-lg" name="password" placeholder="Password">
 							</div>
 						</div>
-						<input type="submit" class="btn btn-lg btn-left-align btn-orange btn-block enable" value="Log in">
+						<input href='halaman_cerita' type="submit" class="btn btn-lg btn-left-align btn-orange btn-block enable" value="Log in">
 					</form>
 				</div>
 			</div>

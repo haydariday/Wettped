@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <!-- this is bootstrap4 -->
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/bootstrap.min.css">
     <link rel="shortcut icon" href="https://i.imgur.com/i4gDwUP.png" type="image/png">
     <title>Wettped</title>
 </head>
@@ -44,11 +44,11 @@
                                                 </button>
                                                 <ul class="dropdown-menu">
                                                         <li>
-                                                        <a href=""><img src="Assets/img/eye.svg" width="30px">View as reader</a>
+                                                        <a href=""><img src="<?= base_url('eye.svg'); ?>" width="30px">View as reader</a>
                                                         </li>
                                                         <div class="dropdown-divider"></div>
                                                         <li>
-                                                         <a href=""><img src="Assets/img/garbage.svg" width="30px">Delete story</a>   
+                                                         <a href=""><img src="<?= base_url('garbage.svg'); ?>" width="30px">Delete story</a>   
                                                         </li>
                                                 </ul>
                                         </div>
