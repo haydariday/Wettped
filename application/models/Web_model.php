@@ -11,6 +11,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     public function load_user(){
 		$sql = $this->db->query("SELECT * FROM users WHERE flag = 1");
 		return $sql->result_array();
+<<<<<<< HEAD
     }
 
 	public function create_user(){
@@ -33,6 +34,20 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     {
         return $this->db->get_where('stories', ['id' => $id_stories])->row_array();
     }
+=======
+	}
+
+	public function create_user($post){
+		$username = $this->db->escape($post['username']);
+		$email = $this->db->escape($post['email']);
+		$password = $this->db->escape($post['password']);
+
+		$sql = $this->db->query("INSERT INTO users VALUES (NULL, $username, $email, $password, 1)");
+		if($sql)
+			return true;
+		return false;
+	}
+>>>>>>> eae5687d9f13285a95b8e611adc419d6d993ac69
 
 	public function get_default_user($id){
 		$sql = $this->db->query("SELECT * FROM users WHERE id = ".intval($id));
@@ -69,6 +84,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
 		return $sql->result_array();
 	}
 
+<<<<<<< HEAD
 	public function create_story(){
         $data = [
             "title" => $this->input->post('title', true),
@@ -78,6 +94,19 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
         ];
 
         $this->db->insert('stories', $data);
+=======
+	public function create_story($post){
+		$title = $this->db->escape($post['title']);
+		$description = $this->db->escape($post['description']);
+		$genre = $this->db->escape($post['genre']);
+		$image = $this->db->escape($post['image']);
+		$story = $this->db->escape($post['story']);
+
+		$sql = $this->db->query("INSERT INTO stories VALUES (NULL, $title, $description, $genre, $image, $story ,1)");
+		if($sql)
+			return true;
+		return false;
+>>>>>>> eae5687d9f13285a95b8e611adc419d6d993ac69
 	}
 
 	public function get_default_story($id){

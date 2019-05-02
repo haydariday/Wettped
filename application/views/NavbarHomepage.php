@@ -11,7 +11,11 @@
     <div class="navigation-bar">
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<<<<<<< HEAD
                     <a class="navbar-brand" href="<?= base_url(); ?>"><img src="https://i.imgur.com/vMZTD75.png" title="source: imgur.com" /></a>
+=======
+                    <a class="navbar-brand" href="#"><img src="https://i.imgur.com/vMZTD75.png" title="source: imgur.com" /></a>
+>>>>>>> eae5687d9f13285a95b8e611adc419d6d993ac69
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>             

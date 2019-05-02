@@ -36,6 +36,7 @@
 						</div>
 					</div>
 					<span class="hr-with-text">OR</span>
+<<<<<<< HEAD
 					<form id="signup-form" action="" method="POST">
 						<input type="hidden" name="signup-from" value="new_landing_reader_top">
 						<input type="hidden" name="form-type" value="">
@@ -55,6 +56,22 @@
 								<input type="password" name="password" class="form-control" id="password">
 								<small class="form-text text-danger"><?= form_error('password'); ?></small>
 							</div>
+=======
+					<form id="signup-form" action="/signup?nextUrl=/home" method="POST">
+						<input type="hidden" name="signup-from" value="new_landing_reader_top">
+						<input type="hidden" name="form-type" value="">
+						<div class="input-group-vertical">
+							<div>Username
+							<input type="text" class="form-control" name="username" value="<?=isset($default['username'])? $default['username'] : ""?>">
+							</div>
+							<div>email
+								<input type="text" class="form-control" name="email" value="<?=isset($default['email'])? $default['email'] : ""?>">
+							</div>
+							<div>password
+							<input type="text" class="form-control" name="password" value="<?=isset($default['password'])? $default['password'] : ""?>">
+							</div>
+
+>>>>>>> eae5687d9f13285a95b8e611adc419d6d993ac69
 						</div>
 						<span class="terms-of-service">By clicking below, you agree to Wattpad's <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.</span>
 						<button name="tombol_submit" class="btn btn-lg btn-left-align btn-orange btn-block enable">

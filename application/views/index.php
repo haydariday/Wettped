@@ -14,8 +14,13 @@
 				<h3 class="TWW">The world's most-loved social storytelling platform</h3>
 				<h4 class="WC">Wettped connects a global community of 70 million readers and writers through the power of story.</h4>
 				<div class="buttons">
+<<<<<<< HEAD:application/views/index.php
 					<button onclick="window.location.href='<?= base_url(); ?>home/register'" class="btn btn-md btn-orange">REGISTER</button>
 					<button onclick="window.location.href='<?= base_url(); ?>home/halaman_cerita'" class="btn btn-md btn-orange">LOGIN</button>
+=======
+					<button onclick="window.location.href='home/register'" class="btn btn-md btn-orange">Start Reading</button>
+					<button onclick="window.location.href='home/halaman_cerita'" class="btn btn-md btn-orange">Start Writing</button>
+>>>>>>> eae5687d9f13285a95b8e611adc419d6d993ac69:application/views/index.php
 				</div>
 			</div>
 			<div class="imageContainer1">

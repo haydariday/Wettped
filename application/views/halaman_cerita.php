@@ -3,6 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<<<<<<< HEAD:application/views/halaman_cerita.php
+=======
+	<link rel="stylesheet" href="<?= base_url(); ?>Assets/css/style.css">
+>>>>>>> eae5687d9f13285a95b8e611adc419d6d993ac69:application/views/halaman_cerita.php
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>Assets/css/bootstrap.min.css">
