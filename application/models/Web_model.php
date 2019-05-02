@@ -47,6 +47,13 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     
     //STORY
 
+    public function list_story(){
+		$this->load->model("Web_model");
+        $home['list_story'] = $this->Web_model->load_story();
+        
+		$this->load->view("membaca",$home);
+	}
+
 	public function load_story(){
 		$sql = $this->db->query("SELECT * FROM stories WHERE flag = 1");
 		return $sql->result_array();
